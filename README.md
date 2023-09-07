@@ -1,1 +1,2 @@
 # Youtube-Playlist-Length
+It is a simple utility website to calculate the total length of all the videos in a youtube playlist in different speeds. I have made use of official youtube API to extract each video details and sum up the overall time duration.

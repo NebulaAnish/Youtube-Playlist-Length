@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
+        <div class="mb-2 sm:mb-0">
+          <a href="#" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark">Playlist Duration</a>
+        </div>
+        <div>
+          <a href="https://github.com/NebulaAnish/Youtube-Playlist-Length" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Github</a>
+        </div>
+      </nav>
+<div class="flex items-center justify-center p-12">
+    <div class="mx-auto w-full max-w-[550px] bg-white">
+      <form class="py-6 px-9">
+        <div class="mb-5">
+          <label
+            for="email"
+            class="mb-3 block text-base font-medium text-[#07074D]"
+          >
+           Enter playlist url
+          </label>
+          <input
+            type="url"
+            name="url"
+            id="url"
+            placeholder="https://www.youtube.com/playlist?list=playlistCode"
+            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+          <button id="submitButton" type="submit" class="group relative mt-10 h-12 w-48 overflow-hidden rounded-2xl bg-green-500 text-lg font-bold text-white">
+            Enter
+            <div class="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+          </button> 
+        </div>
+      </form>
+
+<!-- Output card goes here -->
+<article id ='output' class="rounded-xl border border-gray-700 bg-green-50 p-4">
+  <ul class="mt-4 space-y-2">
+    <li>
+      <a
+        href="#"
+        class="block h-full rounded-lg border border-gray-700 p-4 hover:border-blue-600"
+      >
+        <strong class="font-medium text-black">Normal Speed</strong>
+
+        <p class="mt-1 text-xs font-medium text-black-300" id='normal'>
+
+        </p>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#"
+        class="block h-full rounded-lg border border-gray-700 p-4 hover:border-blue-600"
+      >
+        <strong class="font-medium text-black">1.25x</strong>
+        <p class="mt-1 text-xs font-medium text-black-300" id="one">
+
+        </p>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#"
+        class="block h-full rounded-lg border border-gray-700 p-4 hover:border-blue-600"
+      >
+        <strong class="font-medium text-black">1.5x</strong>
+
+        <p class="mt-1 text-xs font-medium text-black-300" id="two">
+
+        </p>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#"
+        class="block h-full rounded-lg border border-gray-700 p-4 hover:border-blue-600"
+      >
+        <strong class="font-medium text-black">2.0x</strong>
+
+        <p class="mt-1 text-xs font-medium text-black-300" id="three">
+
+        </p>
+      </a>
+    </li>
+  </ul>
+</article>
+
+<div style="display:none ;" id="error" role="alert" class="rounded border-s-4 border-red-500 bg-red-50 p-4">
+  <strong class="block font-medium text-red-800"> Please enter correct URL </strong>
+
+
+</div>  
+
+      
+    </div>
+
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>
